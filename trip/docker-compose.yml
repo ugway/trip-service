@@ -1,0 +1,19 @@
+version: '3'
+services:
+  vehicle-service:
+    build:
+      context: ./vehicle
+    ports:
+      - "8001:8081"
+
+  driver-service:
+    build:
+      context: ./driver
+    ports:
+      - "8002:8082"
+
+  trip-service:
+    build:
+      context: ./trip
+    ports:
+      - "8003:8083"
